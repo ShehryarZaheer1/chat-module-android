@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/margin_normal"
+    app:cardElevation="@dimen/margin_normal"
+    android:layout_marginVertical="@dimen/margin_small"
+    android:elevation="@dimen/margin_normal"
+    android:layout_marginHorizontal="@dimen/margin_normal"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_chat_header"
+            style="@style/TextAppearance.MdcTypographyStyles.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/show_favorites"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/ivChat"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChatTitle"
+            style="@style/TextAppearance.MdcTypographyStyles.Subtitle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toTopOf="@+id/tvLastMessage"
+            app:layout_constraintEnd_toStartOf="@+id/tvTimeAgo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/ivChat"
+            app:layout_constraintTop_toTopOf="@+id/ivChat"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvLastMessage"
+            style="@style/TextAppearance.MdcTypographyStyles.Body1.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="@+id/ivChat"
+            app:layout_constraintEnd_toStartOf="@+id/layoutBadge"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tvChatTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvChatTitle" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivChat"
+            android:layout_width="@dimen/profile_image_chat_inbox_list"
+            android:layout_height="@dimen/profile_image_chat_inbox_list"
+            android:layout_marginVertical="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:src="@drawable/ic_profile_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_chat_header"
+            app:tint="?attr/colorSecondaryVariant" />
+
+        <TextView
+            android:id="@+id/tvTimeAgo"
+            style="@style/TextAppearance.MdcTypographyStyles.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="1/1/2022"
+            app:layout_constraintBottom_toBottomOf="@id/tvChatTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvChatTitle" />
+
+        <LinearLayout
+            android:id="@+id/layoutBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/full_round_background"
+            android:backgroundTint="@color/colorRed"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLastMessage"
+            app:layout_constraintEnd_toStartOf="@+id/btnToggleFav"
+            app:layout_constraintStart_toEndOf="@+id/tvLastMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvChatTitle">
+
+            <TextView
+                android:id="@+id/tvUnreadCounter"
+                style="@style/TextAppearance.MdcTypographyStyles.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/margin_mini"
+                android:text="0"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnToggleFav"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/tvTimeAgo"
+            app:layout_constraintTop_toBottomOf="@id/tvTimeAgo"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+            app:tint="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/single_line_height"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLastMessage"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

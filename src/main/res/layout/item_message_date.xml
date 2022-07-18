@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_normal"
+    android:layout_marginBottom="@dimen/margin_normal"
+    android:gravity="center">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_message_date"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/msg_date_background"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_mini"
+        android:paddingEnd="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_mini"
+        android:text="3/3/2020" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

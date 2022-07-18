@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">دردشة</string>
+    <string name="share_using">مشاركة باستخدام</string>
+    <string name="today">اليوم</string>
+    <string name="you">أنت</string>
+    <string name="not_sent">لم ترسل</string>
+    <string name="sending">إرسال</string>
+    <string name="show_favorites">عرض المفضلة</string>
+    <string name="no_data_found">لم يتم العثور على تقييمات</string>
+    <string name="show_all">عرض الكل</string>
+    <string name="inbox">صندوق البريد الوارد</string>
+    <string name="type_your_message">تسجيل الدخول باسم</string>
+    <string name="chat">دردشة</string>
+    <string name="sending_message">ارسال رسالة</string>
+    <string name="favorites">المفضلة</string>
+    <string name="all_chats">كل الدردشات</string>
+    <string name="loading">النشاط</string>
+    <string name="unarchive">إزالة من الأرشيف</string>
+    <string name="moving_chat_to_archive" >نقل الدردشة للأرشيف</string>
+    <string name="removing_chat_from_archives">إزالة الدردشة من الأرشيف</string>
+    <string name="chat_archived">تمت أرشفة الدردشة</string>
+    <string name="chat_unarchived">الدردشة غير مؤرشفة</string>
+    <string name="archived_chats">أرشيف</string>
+    <string name="no_archived_chats">لا توجد محادثات مؤرشفة</string>
+    <string name="archive_chat">الارشيف الدردشة</string>
+    <string name="moved_to_archived_success">تم النقل إلى الأرشيف</string>
+    <string name="delete">حذف</string>
+    <string name="deleting_chat">حذف الدردشة</string>
+    <string name="confirmation">تأكيد</string>
+    <string name="delete_chat_msg">هل أنت متأكد أنك تريد حذف هذه الدردشة؟</string>
+    <string name="cancel">إلغاء</string>
+    <string name="name">اسم</string>
+    <string name="view_profile">عرض الصفحة الشخصية</string>
+    <string name="create_treatment_plan">ضع خطة العلاج</string>
+    <string name="emr">السجل الطبي الألكتروني</string>
+    <string name="conversations">المحادثات</string>
+    <string name="emr_permission_denied">تعذر الوصول إلى السجلات الطبية الإلكترونية (EMR) بسبب خصوصية المريض</string>
+
+</resources>

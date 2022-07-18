@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/chat_msg_radius" android:bottomRightRadius="@dimen/chat_msg_radius" android:topLeftRadius="@dimen/chat_msg_radius" android:topRightRadius="@dimen/chat_msg_radius"></corners>
+            <solid android:color="?attr/colorSecondary"></solid>
+
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/chat_msg_radius" android:bottomRightRadius="15dp" android:topLeftRadius="@dimen/chat_msg_radius"
+                android:topRightRadius="@dimen/chat_msg_radius"></corners>
+            <solid android:color="?attr/colorSecondary"></solid>
+
+        </shape>
+    </item>
+</selector>

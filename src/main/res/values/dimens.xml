@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_msg_radius">20dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_mini">2dp</dimen>
+    <dimen name="chat_image_width_height">200dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+    <dimen name="icon_normal">36dp</dimen>
+    <dimen name="progress_bar_small">32dp</dimen>
+    <dimen name="margin_humungous">60dp</dimen>
+    <dimen name="radius_round">200dp</dimen>
+    <dimen name="profile_image_small">35dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="single_line_height">1dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="profile_image_chat">40dp</dimen>
+    <dimen name="profile_image_chat_inbox_list">50dp</dimen>
+</resources>
